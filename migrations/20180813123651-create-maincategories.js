@@ -23,6 +23,6 @@ module.exports = {
     });
   },
   down: function down(queryInterface, Sequelize) {
-    return queryInterface.dropTable('maincategories');
+    return queryInterface.dropTable('MainCategories');
   }
 };
