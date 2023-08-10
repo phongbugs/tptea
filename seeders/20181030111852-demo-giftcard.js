@@ -21,7 +21,7 @@ module.exports = {
 
             case 2:
               data = _context.sent;
-              return _context.abrupt('return', queryInterface.bulkInsert('GiftCards', _d.map(data, function (row) {
+              return _context.abrupt('return', queryInterface.bulkInsert('giftcards', _d.map(data, function (row) {
                 return _d.pick(row, ['id', 'code', 'amount', 'expiry', 'createdat', 'updatedat', 'customerid', 'isprinted']);
               }), {}));
 
@@ -42,6 +42,6 @@ module.exports = {
 
 
   down: function down(queryInterface, Sequelize) {
-    return queryInterface.bulkDelete('GiftCards', null, {});
+    return queryInterface.bulkDelete('giftcards', null, {});
   }
 };

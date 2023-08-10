@@ -2,7 +2,7 @@
 
 module.exports = {
   up: function up(queryInterface, Sequelize) {
-    return queryInterface.createTable('GiftCards', {
+    return queryInterface.createTable('giftcards', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -24,7 +24,7 @@ module.exports = {
       customerId: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'Customers',
+          model: 'customers',
           key: 'id'
         }
       },
@@ -33,6 +33,6 @@ module.exports = {
     });
   },
   down: function down(queryInterface, Sequelize) {
-    return queryInterface.dropTable('GiftCards');
+    return queryInterface.dropTable('giftcards');
   }
 };

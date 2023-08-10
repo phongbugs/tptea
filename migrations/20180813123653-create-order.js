@@ -2,7 +2,7 @@
 
 module.exports = {
   up: function up(queryInterface, Sequelize) {
-    return queryInterface.createTable('Orders', {
+    return queryInterface.createTable('orders', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -12,7 +12,7 @@ module.exports = {
       customerId: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'Customers',
+          model: 'customers',
           key: 'id'
         }
       },
@@ -21,6 +21,6 @@ module.exports = {
     });
   },
   down: function down(queryInterface, Sequelize) {
-    return queryInterface.dropTable('Orders');
+    return queryInterface.dropTable('orders');
   }
 };
