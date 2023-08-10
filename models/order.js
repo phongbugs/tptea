@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (sequelize, DataTypes) {
-  var Order = sequelize.define('Order', {
+  var Order = sequelize.define('order', {
     customerId: DataTypes.INTEGER,
     storeId: DataTypes.INTEGER,
     isStorePickUp: DataTypes.BOOLEAN,

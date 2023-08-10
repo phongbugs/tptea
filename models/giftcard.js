@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (sequelize, DataTypes) {
-  var GiftCard = sequelize.define('GiftCard', {
+  var GiftCard = sequelize.define('giftcard', {
     code: DataTypes.STRING,
     customerId: DataTypes.INTEGER,
     amount: DataTypes.INTEGER,
