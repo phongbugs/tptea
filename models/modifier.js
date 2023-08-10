@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (sequelize, DataTypes) {
-  var Modifier = sequelize.define('modifier', {
+  var Modifier = sequelize.define('Modifier', {
     name: DataTypes.STRING,
     price: DataTypes.STRING,
     groupTitle: DataTypes.STRING,
