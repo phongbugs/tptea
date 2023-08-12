@@ -21,7 +21,7 @@ module.exports = {
 
             case 2:
               data = _context.sent;
-              return _context.abrupt('return', queryInterface.bulkInsert('modifiers', _d.map(data, function (row) {
+              return _context.abrupt('return', queryInterface.bulkInsert('Modifiers', _d.map(data, function (row) {
                 return _d.pick(row, ['id', 'name', 'price', 'grouptitle', 'grouptype', 'isdefault']);
               }), {}));
 

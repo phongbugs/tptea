@@ -21,7 +21,7 @@ module.exports = {
 
             case 2:
               data = _context.sent;
-              return _context.abrupt('return', queryInterface.bulkInsert('maincategories', _d.map(data, function (row) {
+              return _context.abrupt('return', queryInterface.bulkInsert('MainCategories', _d.map(data, function (row) {
                 return _d.pick(row, ['id', 'name', 'desc', 'img']);
               }), {}));
 
